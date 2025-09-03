@@ -10,14 +10,14 @@ const AboutMe = () => {
 
   return (
     <motion.section
-      id="about"
-      aria-labelledby="about-heading"
-      variants={fadeIn()}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="py-20 px-6 max-w-5xl mx-auto text-center"
-    >
+  id="about"
+  aria-labelledby="about-heading"
+  variants={fadeIn()}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  className="py-12 sm:py-16 lg:py-20 px-6 max-w-5xl mx-auto text-center"
+>
       {/* Heading with gradient */}
       <h2
         id="about-heading"

@@ -73,14 +73,14 @@ const Projects = () => {
 
   return (
     <motion.section
-      id="projects"
-      aria-labelledby="projects-heading"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className="py-20 px-6 max-w-6xl mx-auto"
-    >
+  id="projects"
+  aria-labelledby="projects-heading"
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+  className="py-10 sm:py-14 lg:py-20 px-6 max-w-6xl mx-auto"
+>
       <h2
         id="projects-heading"
         className="text-4xl font-bold text-center mb-12 text-blue-400"
