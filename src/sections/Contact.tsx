@@ -11,15 +11,15 @@ const Contact = () => {
   });
 
   return (
-    <motion.section
-      id="contact"
-      aria-labelledby="contact-heading"
-      variants={fadeIn()}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-center"
-    >
+   <motion.section
+  id="contact"
+  aria-labelledby="contact-heading"
+  variants={fadeIn()}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  className="py-10 sm:py-14 lg:py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-center"
+>
       {/* Heading */}
       <h2
         id="contact-heading"

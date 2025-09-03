@@ -51,15 +51,15 @@ const Education = () => {
   ];
 
   return (
-    <motion.section
-      id="education"
-      aria-labelledby="education-heading"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className="py-20 px-6 max-w-5xl mx-auto"
-    >
+   <motion.section
+  id="education"
+  aria-labelledby="education-heading"
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+  className="py-10 sm:py-14 lg:py-20 px-6 max-w-5xl mx-auto"
+>
       <h2
         id="education-heading"
         className="text-4xl font-bold text-center mb-12 text-blue-400"

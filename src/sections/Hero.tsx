@@ -58,7 +58,7 @@ const Hero = () => {
       <motion.div initial="hidden" animate="show" variants={fadeIn(0.7)}>
         <Button
           size="lg"
-          className="bg-blue-500 hover:bg-blue-600 rounded-full px-6 py-3 text-lg"
+          className="bg-blue-700 hover:bg-blue-800 text-white rounded-full px-6 py-3 text-lg cursor-pointer"
           aria-label="View my work"
           onClick={() => {
             const projectsSection = document.getElementById("projects");

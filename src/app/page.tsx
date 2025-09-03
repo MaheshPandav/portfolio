@@ -8,6 +8,7 @@ import Skills from "@/sections/Skills";
 import Education from "@/sections/Education";
 import Projects from "@/sections/Projects";
 import Contact from "@/sections/Contact";
+import Experience from "@/sections/Experience";
 
 export default function Home() {
   return (
@@ -32,6 +33,10 @@ export default function Home() {
       <section id="education">
         <Education />
       </section>
+
+      <section id="experience">
+  <Experience />
+</section>
 
       <section id="projects">
         <Projects />

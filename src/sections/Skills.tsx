@@ -31,14 +31,14 @@ const Skills = () => {
 
   return (
     <motion.section
-      id="skills"
-      aria-labelledby="skills-heading"
-      variants={fadeIn()}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="py-20 px-6"
-    >
+  id="skills"
+  aria-labelledby="skills-heading"
+  variants={fadeIn()}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true }}
+  className="py-10 sm:py-14 lg:py-20 px-6"
+>
       <h2
         id="skills-heading"
         className="text-4xl font-bold text-center mb-12 text-blue-400"
