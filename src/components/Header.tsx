@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // ✅ Stable toggle function
   const toggleMenu = useCallback(() => setIsOpen((prev) => !prev), []);
 
   const navItems = [
@@ -18,7 +17,6 @@ export default function Header() {
     { label: "Contact", href: "#contact" },
   ];
 
-  // ✅ Smooth scroll helper
   const handleSmoothScroll = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
     href: string
@@ -26,12 +24,11 @@ export default function Header() {
     e.preventDefault();
     const section = document.querySelector(href);
     section?.scrollIntoView({ behavior: "smooth", block: "start" });
-    setIsOpen(false); // close mobile menu if open
+    setIsOpen(false);
   };
 
   return (
     <header className="fixed top-0 left-0 w-full z-50" role="banner">
-      {/* Header Container */}
       <motion.div
         initial={{ opacity: 0, y: -40, filter: "blur(10px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -44,7 +41,6 @@ export default function Header() {
         className="bg-black/40 backdrop-blur-md border-b border-gray-800 shadow-lg"
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.08, rotate: -2 }}
             transition={{ type: "spring", stiffness: 200 }}
@@ -59,7 +55,6 @@ export default function Header() {
             </a>
           </motion.div>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8" role="navigation">
             {navItems.map((item, i) => (
               <motion.div
@@ -79,7 +74,6 @@ export default function Header() {
               </motion.div>
             ))}
 
-            {/* ✅ Resume Download Button */}
             <motion.a
               href="/Mahesh-Resume.pdf"
               download
@@ -94,7 +88,6 @@ export default function Header() {
             </motion.a>
           </nav>
 
-          {/* Mobile Menu Button */}
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={toggleMenu}
@@ -108,7 +101,6 @@ export default function Header() {
         </div>
       </motion.div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -138,7 +130,6 @@ export default function Header() {
                 </motion.div>
               ))}
 
-              {/* ✅ Resume Download for Mobile */}
               <motion.a
                 href="/Mahesh-Resume.pdf"
                 download

@@ -18,7 +18,6 @@ const AboutMe = () => {
   viewport={{ once: true }}
   className="py-12 sm:py-16 lg:py-20 px-6 max-w-5xl mx-auto text-center"
 >
-      {/* Heading with gradient */}
       <h2
         id="about-heading"
         className="text-4xl font-extrabold mb-8 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
@@ -26,7 +25,6 @@ const AboutMe = () => {
         About Me
       </h2>
 
-      {/* Card-like container */}
       <div className="bg-gray-800/40 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-700 hover:border-blue-400 transition-all duration-300">
         <p className="text-gray-300 text-lg leading-relaxed">
           Hi 👋, I’m{" "}

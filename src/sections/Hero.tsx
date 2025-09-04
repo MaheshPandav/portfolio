@@ -16,7 +16,6 @@ const Hero = () => {
       className="flex flex-col items-center justify-center h-screen text-center px-6"
       aria-labelledby="hero-heading"
     >
-      {/* Background gradient glow (responsive) */}
       {/* <div className="absolute inset-0 -z-10 bg-gradient-to-b from-gray-900 via-black to-gray-900" />
       <div
         className="

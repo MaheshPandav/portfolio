@@ -16,7 +16,7 @@ const Projects = () => {
     show: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2, // delay between each card
+        staggerChildren: 0.2,
       },
     },
   };
