@@ -5,11 +5,10 @@ import { Github, Linkedin, Mail } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="relative bg-black/60 border-t border-gray-800">
-      {/* Top Glow Divider */}
       <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-[200px] h-[60px] bg-blue-500/20 blur-3xl rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-        {/* Branding */}
+
         <div>
           <p className="text-sm text-gray-400">
             © {new Date().getFullYear()}{" "}
@@ -21,7 +20,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Social Links */}
         <div className="flex space-x-4">
           <a
             href="https://github.com/MaheshPandav"

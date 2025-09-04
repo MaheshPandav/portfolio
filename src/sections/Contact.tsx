@@ -20,7 +20,6 @@ const Contact = () => {
   viewport={{ once: true }}
   className="py-10 sm:py-14 lg:py-20 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-center"
 >
-      {/* Heading */}
       <h2
         id="contact-heading"
         className="text-4xl font-bold mb-6 text-blue-400"
@@ -28,13 +27,11 @@ const Contact = () => {
         Let’s Connect
       </h2>
 
-      {/* Subtext */}
       <p className="text-gray-300 max-w-2xl mx-auto mb-12 text-lg leading-relaxed">
         Whether you have a question, a project idea, or just want to say hello, 
         I’d love to hear from you. Let’s build something amazing together.
       </p>
 
-      {/* Contact options */}
       <div className="flex flex-wrap justify-center gap-6 mb-10">
         <a
           href="mailto:pandavmahesh490@gmail.com"

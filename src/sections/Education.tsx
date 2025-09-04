@@ -67,7 +67,6 @@ const Education = () => {
         Education
       </h2>
 
-      {/* Timeline wrapper */}
       <motion.div
         className="relative border-l-2 border-blue-500/30 ml-4"
         variants={containerVariants}
@@ -81,12 +80,9 @@ const Education = () => {
               whileHover={{ scale: 1.02 }}
               className="mb-10 ml-6 relative"
             >
-              {/* Timeline dot */}
               <span className="absolute -left-3 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 text-white shadow-md">
                 <Icon size={14} />
               </span>
-
-              {/* Project-style Card */}
               <div className="bg-gradient-to-br from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-6 shadow-md hover:shadow-lg transition-all">
                 <h3 className="text-2xl font-semibold mb-2 text-white">
                   {edu.degree}
